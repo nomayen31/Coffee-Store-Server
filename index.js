@@ -12,6 +12,11 @@ app.use(express.json())
 
 // 10
 
+
+app.get('/users', (req, res)=>{
+    res.send('user route')
+})
+
 app.get('/',(req, res)=>{
     res.send('Coffee making server is running')
 })
